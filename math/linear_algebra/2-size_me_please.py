@@ -7,9 +7,9 @@
     The formula use to calculate rows is len(matrix),
     and to get the columns is len(matrix[0])
 """
+
+
 def matrix_shape(matrix):
-
-
     """
         This module calculates the shape of a matrix,
         calculating the rowns, columns and matrixes.
