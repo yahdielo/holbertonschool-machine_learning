@@ -1,4 +1,6 @@
-#!/usr/bin/env python3
+#!/usr/bin/env 
+
+
 """
     This module calculates the shape of a matrix,
     calculating the rowns, columns and matrixes.
@@ -15,5 +17,5 @@ def matrix_shape(matrix):
     shape = []
     while isinstance(matrix, list):
         shape.append(len(matrix))
-        matrix = matrix[0] 
+        matrix = matrix[0]
     return shape
