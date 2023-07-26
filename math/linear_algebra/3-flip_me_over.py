@@ -14,12 +14,3 @@ def matrix_transpose(matrix):
             temp[j][i] = matrix[i][j]
             
     return temp
-                
-
-
-
-print(matrix_transpose(matrix))
-            
-                
-                
-
