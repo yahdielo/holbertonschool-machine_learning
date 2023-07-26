@@ -10,5 +10,5 @@ def cat_arrays(arr1, arr2):
     if arr1 and arr2:
         newList = []
         newList.append(arr1 + arr2)
-        return newList
+        return list(newList)
     return None
