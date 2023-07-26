@@ -9,6 +9,6 @@ def cat_arrays(arr1, arr2):
 
     if arr1 and arr2:
         newList = []
-        newList.append(arr1 + arr2)
-        return list(newList)
+        newList.append(list(arr1) + list(arr2))
+        return newList
     return None
