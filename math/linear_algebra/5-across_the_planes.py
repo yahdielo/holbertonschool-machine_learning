@@ -11,6 +11,7 @@ def add_matrices2D(mat1, mat2):
 
     if bool(mat1[0]) == True and bool(mat2[0]) == True:
         if M1Shape == M2Shape:
+            newMatrix = []
             newMatrix = [[mat1[i][j] + mat2[i][j] for i in range(len(mat1))] 
                         for j in range(len(mat1[0]))]
             return newMatrix
