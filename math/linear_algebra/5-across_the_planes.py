@@ -14,9 +14,10 @@ def add_matrices2D(mat1, mat2):
         if M1Shape == M2Shape:
             newMatrix = []
             for i in range(len(mat1)):
+                sum = []
                 for j in range(len(mat1[0])):
-                    sum = mat1[i][j] + mat2[i][j]
+                    sum.append(mat1[i][j] + mat2[i][j])
                 newMatrix.append(sum)
-            return newMatrix
+                return newMatrix
     else:
         return None
