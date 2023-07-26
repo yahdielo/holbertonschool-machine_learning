@@ -6,7 +6,6 @@
 def add_matrices2D(mat1, mat2):
     """ This modules sums two matrixes together """
 
-
     # if (bool(mat1[0]) == True) and bool(mat2[0]) == True:
     M1Shape = (len(mat1), len(mat1[0]))
     M2Shape = (len(mat2), len(mat2[0]))
