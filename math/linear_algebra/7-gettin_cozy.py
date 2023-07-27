@@ -12,6 +12,6 @@ def cat_matrices2D(mat1, mat2, axis=0):
             newmatrix = mat1 + mat2 
             return newmatrix
         else:
-            for i in range(len(mat2)):
+            for i in range(len(mat1)):
                 newmatrix.append(mat1[i] + mat2[i])
             return newmatrix
