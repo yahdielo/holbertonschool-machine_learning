@@ -1,19 +1,23 @@
 #!/usr/bin/env python3
-
-""" This modules sums two matrixes together"""
+""" This file contains the function called add_matrices2D """
 
 
 def add_matrices2D(mat1, mat2):
-    """ This modules sums two matrixes together """
-
-
-    if bool(mat1[0]) == True and bool(mat2[0]) == True:
-            M1Shape = (len(mat1), len(mat1[0]))
-            M2Shape = (len(mat2), len(mat2[0]))
-            if M1Shape[1] == M2Shape[1]:
-                newMatrix = []
-                newMatrix = [[mat1[i][j] + mat2[i][j] for i in range(len(mat1))] 
-                            for j in range(len(mat1[0]))]
-                return newMatrix
+    """
+    Funciton that transpose matrix
+    Arguments:
+        mat1: nested list
+        mat2: nested list
+    Returns: new matrix with sum of both arguments
+    """
+    if (len(mat1[0]) == len(mat2[0])):
+        nw_matrix = []
+        row_len = len(mat1[0])
+        for i in range(len(mat1)):
+            nw_row = []
+            for j in range(row_len):
+                nw_row.append(mat1[i][j] + mat2[i][j])
+            nw_matrix.append(nw_row)
+        return nw_matrix
     else:
         return None
