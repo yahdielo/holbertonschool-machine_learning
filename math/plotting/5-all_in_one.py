@@ -26,44 +26,48 @@ np.random.seed(5)
 student_grades = np.random.normal(68, 15, 50)
 
 font_size = 'x-small'
+fid = plt.figure()
 
-fig, axs = plt.subplots(3, 2)
-
-
-axs[0, 0].plot(y0, color='red')
-
-
-axs[0, 1].scatter(x1, y1, color='magenta', s=5)
-axs[0, 1].set_title("Men's Height vs Weight", fontsize=font_size)
-axs[0, 1].set_xlabel("Height (in)", fontsize=font_size)
-axs[0, 1].set_ylabel("Weight (lbs)", fontsize=font_size)
-
-axs[1, 0].plot(x2, y2)
-axs[1, 0].set_title("Exponential Decay of C-14", fontsize=font_size)
-axs[1, 0].set_xlabel("Time (years)", fontsize=font_size)
-axs[1, 0].set_ylabel("Fraction Remaining", fontsize=font_size)
-
-axs[1, 1].plot(x3, y31, c="red", linestyle='dashed')
-axs[1, 1].plot(x3, y32, c="green")
-axs[1, 1].set_title("Exponential Decay of Radiactive Elements", fontsize=font_size)
-axs[1, 1].set_xlabel("Time (years)", fontsize=font_size)
-axs[1, 1].set_ylabel("Fraction remaining", fontsize=font_size)
-
-# Remove the empty subplot (axis[2, 0]) to be able to display the chart in the full row
-axs[2, 1].axis('off')
+axs1 = plt.subplot2grid(shape=(3, 2), loc=(0, 0), colspan=1)
+axs2 = plt.subplot2grid(shape=(3, 2), loc=(0, 1), colspan=1)
+axs3 = plt.subplot2grid(shape=(3, 2), loc=(1, 0), colspan=1)
+axs4 = plt.subplot2grid(shape=(3, 2), loc=(1, 1), colspan=1)
+axs5 = plt.subplot2grid(shape=(3, 2), loc=(2, 0), colspan=2)
 
 
-axs[2, 0].hist(student_grades, bins=range(0, 101, 10), edgecolor='black')
-axs[2, 0].set_title("Project A", fontsize=font_size)
-axs[2, 0].set_xlabel("Grades", fontsize=font_size)
-axs[2, 0].set_ylabel("Number of Students", fontsize=font_size)
 
-plt.margins(x=0)
+axs1.plot(y0, color='red')
+axs1.margins(x=0)
+
+axs2.scatter(x1, y1, color='magenta', s=5)
+axs2.set_title("Men's Height vs Weight", fontsize=font_size)
+axs2.set_xlabel("Height (in)", fontsize=font_size)
+axs2.set_ylabel("Weight (lbs)", fontsize=font_size)
+
+axs3.plot(x2, y2)
+axs3.set_title("Exponential Decay of C-14", fontsize=font_size)
+axs3.set_xlabel("Time (years)", fontsize=font_size)
+axs3.set_ylabel("Fraction Remaining", fontsize=font_size)
+axs3.margins(x=0)
+
+
+axs4.plot(x3, y31, c="red", linestyle='dashed')
+axs4.plot(x3, y32, c="green")
+axs4.set_title("Exponential Decay of Radiactive Elements", fontsize=font_size)
+axs4.set_xlabel("Time (years)", fontsize=font_size)
+axs4.set_ylabel("Fraction remaining", fontsize=font_size)
+axs4.margins(x=0)
+
+axs5.hist(student_grades, bins=range(0, 101, 10), edgecolor='black')
+axs5.set_title("Project A", fontsize=font_size)
+axs5.set_xlabel("Grades", fontsize=font_size)
+axs5.set_ylabel("Number of Students", fontsize=font_size)
+
+"""
 plt.margins(x=0)
 plt.ylim(0)
 plt.xlim(0)
 
-# Adjust the layout to prevent overlapping of titles
+"""
 plt.tight_layout()
-
 plt.show()
