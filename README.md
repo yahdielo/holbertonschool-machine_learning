@@ -4,10 +4,10 @@
 ## projects 
 - linear algebra
 
-1 - Array slicing
-2 - Appending middle rows of a mtrix to a new one, with slicing
-3 - Function to transpose an array
-4 - Function to sum 2 arrays
-5 - Function to transpose a matrix
-6- Concatenate two arrays
-7 - Concatenate two matrixes
+- Array slicing
+- Appending middle rows of a mtrix to a new one, with slicing
+- Function to transpose an array
+- Function to sum 2 arrays
+- Function to transpose a matrix
+- Concatenate two arrays
+- Concatenate two matrixes
