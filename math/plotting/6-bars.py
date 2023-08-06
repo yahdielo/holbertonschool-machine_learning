@@ -14,7 +14,6 @@ oranges = fruit[2]
 peaches = fruit[3]
 
 
-
 plt.bar(x, apples, color=colors[0], width=0.5, label=fruits[0])
 plt.bar(x, bananas, bottom=apples, color=colors[1], width=0.5, label=fruits[1])
 plt.bar(x, oranges, bottom=apples + bananas, color=colors[2], width=0.5, label=fruits[2])

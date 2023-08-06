@@ -17,7 +17,8 @@ def matrix_shape(matrix):
         and to get the columns is len(matrix[0])
     """
     shape = []
-    while isinstance(matrix, list):
+    while isinstance(matrix, list): 
+        print(len(matrix[0]))
         shape.append(len(matrix))
         matrix = matrix[0]
     return shape

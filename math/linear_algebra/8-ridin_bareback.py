@@ -4,10 +4,13 @@
 
 
 def mat_mul(mat1, mat2):
+        """     This module multiplies  creating a new one, 
+                with the size of the outter dimensions
+                of matrixA and matrixB. Then we creat a nested loop
+                to iterate in side the newMatrix, and with list comprehenssion
+                as we itirated in newMatrix we create another loop
+                to multiply the 2 matrices and assing a the value of the multiplication
         """
-                This function performs multiplication of two given matrixes
-        """
-
         if len(mat1[0]) != len(mat2):
                 return None
 
