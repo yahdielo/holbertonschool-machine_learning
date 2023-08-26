@@ -40,10 +40,9 @@ class Neuron:
         return self.__A
 
     def forward_prop(self, X):
-        """ This function perfomrs froward propagation""" 
+        """ This function perfomrs froward propagation"""
         z = np.dot(self.__W, X) + self.__b
 
         self.__A = 1 / (1 + np.exp(-z))
 
         return self.__A
-
