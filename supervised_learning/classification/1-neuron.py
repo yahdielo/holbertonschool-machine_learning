@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """ class Neuron that defines a single neuron
     performing binary classification
 """
@@ -26,9 +27,11 @@ class Neuron:
     @property
     def W(self):
         return self.__W
+
     @property
     def b(self):
         return self.__b
+
     @property
     def A(self):
         return self.__A
